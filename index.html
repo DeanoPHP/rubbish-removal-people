@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>removals</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">Rubbish Removal People</div>
+            <div class="topnav">
+            <a href="#home" class="active"></a>
+
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header"></header>
+
+    <main>
+        <div class="card-container">
+            <div class="left">
+                <div class="card">
+                    <img src="images/IMG_1597.jpeg" width="100%" height="100%" alt="">
+                </div> 
+            </div>   
+            <div class="right">
+                <h1 style="text-align: center;color: green;">Contact Us</h1>
+                <form action="">
+                    <div class="form-left">
+                        <label for="fname"> Firstname: </label>
+                        <input type="text" name="fname" id="fname">
+
+                        <label for="lname"> Lastname: </label>
+                        <input type="text" name="lname" id="lname">
+
+                        <label for="num"> Phone Number: </label>
+                        <input type="num" name="num" id="num">
+                    </div>
+
+                    <div class="form-right">
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <button type="submit" name="btn-submit" id="btn-submit">Send</button>
+                    </div>                
+                </form>
+            </div>        
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

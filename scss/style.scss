@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(174, 168, 182);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    min-height: 50px;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+li {
+    margin-left: 20px;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    font-family: bold;
+}
+
+.logo {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    z-index: 1;
+    font-size: 1.6em;
+    width: 90%;
+    font-weight: bolder;
+    height: 100px;
+    color: green;
+}
+
+
+header {
+    width: 100%;
+    min-height: 300px;
+    background-image: url('../images/large-header-image-1.jpeg');
+    background-size: 100% 100%;
+}
+
+main {
+    .card-container {
+        height: 400px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .left {
+        width: 50%;
+
+        .card {
+            width: 100%;
+            height: 420px;
+            padding: 10px;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        form {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 300px;
+            width: 96%;
+            padding: 20px;
+            margin: 10px auto;
+            display: flex;
+            background-color: rgb(52, 188, 116);
+
+
+            .form-left {
+                width: 50%;
+
+                label {
+                    display: block;
+                    font-size: 1.6em;
+                }
+
+                input {
+                    display: block;
+                    width: 90%;
+                    height: 24px;
+                    border-radius: 10px;
+                    margin: 5px 0 5px 0;
+                    padding: 6px;
+                    font-size: 1.2em;
+                }
+            }
+
+            .form-right {
+                width: 50%;
+
+                textarea {
+                    display: block;
+                    margin-top: 30px;
+                    width: 98%;
+                    height: 160px;
+                    padding: 10px;
+                    font-size: 1.2em;
+                }
+
+                button {
+                    width: 120px;
+                    height: 25px;
+                    margin-top: 10px;
+                    margin-left: 170px;
+                    background-color: chartreuse;
+                    border: 2px solid red;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        height: 1000px;
+        background-color: rgb(174, 168, 182));
+    }
+
+    .navLinks {
+        display: none;
+        background-color: rgb(49, 49, 46);
+    }
+
+    .topnav #myLinks {
+        display: none;
+        text-align: center;
+        background-color: rgb(36, 32, 28);
+        border-bottom: 1px solid black;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: rgb(22, 188, 102);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: rgb(22, 188, 102);
+        color:#ddd;
+    }
+
+    .active {
+        background-color: black;
+        color: white;
+        min-height: 50px;
+    }
+
+    main > .card-container {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(174, 168, 182);
+
+        .left {
+            width: 100%;
+
+           .card {
+            width: 98%;
+            height: 400px;
+            margin: 10px auto;
+           } 
+        } 
+
+        .right {
+            // however high right must add to card-container
+            width: 100%;
+
+            form {
+                height: 280px;
+                background-color: rgb(52, 188, 116);
+
+                button {
+                    margin-left: 30%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    margin-top: 20px;
+    padding-top: 20px;
+}
